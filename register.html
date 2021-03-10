@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/custom.css">
 
 
-    <title>Amazon Navbar, </title>
+    <title>Amazon Register, </title>
 </head>
 
 
@@ -59,6 +59,7 @@
                         <hr>
                         <a href="navbar.html" class="btn btn-warning btn-sm my-2"> Navbar</a>
                         <a href="drawer.html" class="btn btn-warning btn-sm my-2"> Drawer</a>
+
                          
                     </div>
                     <div class="drawer-footer">
@@ -171,7 +172,7 @@
                         <div class="dropdown-menu px-3" aria-labelledby="userAccount">
                             <div class="d-flex row justify-content-center">
                                 <a href="login.html" class="btn btn-warning w-75 font-weight-bold">Signin</a>
-                                <small class="text-muted">New Customer? <a href="register.html">Start here.</a></small>
+                                <small class="text-muted">New Customer? <a href="#">Start here.</a></small>
                             </div>
                         </div>
                     </li>
@@ -195,6 +196,79 @@
         </div>
     </nav>
     <!--Navi bar end-->
+
+
+
+    <!--Register start-->
+
+
+    <div class="container mb-5">
+        <div class="card mx-auto mt-5 shadow pb-3   bg-white rounded" style="width: 25rem;">
+
+            <div class="card-body">
+                <h3 class="card-title">Register</h3>
+                <!--Register Form-->
+                <form novalidate>
+                    <div class="form-group">
+                        <label for="userName">Full Name </label>
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" id="userName"
+                            >
+                        
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <label for="userEmail">Email: </label>
+                        <input type="email" name="email" class="form-control" placeholder="abc@gmail.com" id="userEmail"
+                            aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted"><i class="fas fa-info text-primary"></i> We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPassword">Password: </label>
+                        <input type="password" name="password" placeholder="*******" class="form-control"
+                            id="userPassword" aria-describedby="passwordHelp">
+                        <small id="passwordHelp" class="form-text text-muted"><i class="fas fa-info text-primary"></i> Password Must Be At Least 6
+                            Characters</small>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="userPassword">Re- Password: </label>
+                        <input type="password2" name="password2" placeholder="*******" class="form-control"
+                            id="userPassword2" aria-describedby="passwordHelp2">
+                        <small id="passwordHelp2" class="form-text text-muted"><i class="fas fa-info text-primary"></i> Password Must Match The Above
+                        </small>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-warning w-100 shadow  btn-sm rounded">Register</button>
+                </form>
+                <!--Register form end-->
+
+                <!--Or Seprator-->
+                <hr class="hr-text" data-content="Register With OR"  >
+
+                <!--create account button-->
+                <p class="py-3 text-center">Already have an account? <a href="login.html">Login here <i class="fas fa-caret-right"></i></a></p>
+
+                <a href="#" class="btn btn-outline-success btn-sm mt-2 w-100">
+                    <i class="fab fa-google"></i> Sigin in with google
+                </a>
+
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2 w-100">
+                    <i class="fab fa-facebook-square"></i> Sigin in with facebook
+                </a>
+
+
+
+            </div>
+        </div>
+    </div>
+
 
 
 
