@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/custom.css">
 
 
-    <title>Amazon Login, </title>
+    <title>Amazon Your Account</title>
 </head>
 
 
@@ -56,8 +56,6 @@
                         <h6 class="text-muted text-uppercase"> Help & Setting</h6>
                         <a href="your_account.html" class="btn btn-outline-success btn-sm my-2"> Your Account</a>
                         <a href="login.html" class="btn btn-warning btn-sm my-2"> Singn In</a>
-
-                     
 
                     </div>
                     <div class="drawer-footer">
@@ -180,7 +178,7 @@
                     <li class="nav-item px-2">
                         <a class="nav-link" href="" area-disabled="true">
                             <i class="fas text-light fa-shopping-cart fa-2x"></i>
-                            <span class="badge badge-warning badge-pill">10</span>
+                            <span class="badge badge-warning badge-pill">0</span>
                         </a>
                     </li>
 
@@ -195,77 +193,70 @@
     </nav>
     <!--Navi bar end-->
 
+    <!--Your Account-->
+
+    <div class="container mt-5">
+        <h1>Your Account</h1>
+
+        <!--Account Pannel Start-->
+        <div class="row">
 
 
-    <!--login start-->
-
-
-    <div class="container mb-5">
-        <div class="card mx-auto mt-5 shadow pb-3   bg-white rounded" style="width: 25rem;">
-
-            <div class="card-body">
-                <h3 class="card-title">Login</h3>
-                <!--Login Form-->
-                <form class="needs-validation" method="POST" action="#" novalidate>
-
-
-                    <div class="form-group">
-                        <label for="userEmail">Email: </label>
-                        <input type="email" name="email" class="form-control" placeholder="abc@gmail.com" id="userEmail"
-                            aria-describedby="emailHelp" required>
-                        <small id="emailHelp" class="form-text text-muted"><i class="fas fa-info text-primary"></i>
-                            We'll never share your email with anyone
-                            else.</small>
-
-                        <div class="valid-feedback">
-                            Looks good!
+            <div class="col-md-4">
+                <a href="#" class="btn w-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <i class="fas fa-shopping-bag fa-2x"></i>
+                                <span class="h4">Your Orders</span>
+                            </div>
+                            <small class="text-muted">Track, return, or buy things again. </small>
                         </div>
-                        <div class="invalid-feedback">
-                            Some Email Error
-                        </div>
-
                     </div>
-
-                    <div class="form-group">
-                        <label for="userPassword">Password: </label>
-                        <input type="password" name="password" placeholder="*******" class="form-control"
-                            id="userPassword" aria-describedby="passwordHelp" required minlength="6">
-                        <small id="passwordHelp" class="form-text text-muted"> <i class="fas fa-info text-primary"></i>
-                            Password Must be at least 6
-                            Characters</small>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Some Password Error
-                        </div>
-
-                    </div>
-
-                    <button type="submit" class="btn btn-warning w-100 shadow  btn-sm rounded">Signin</button>
-                </form>
-                <!--login form end-->
-
-                <!--Or Seprator-->
-                <hr class="hr-text" data-content="New to amazon?">
-
-                <!--create account button-->
-                <a href="register.html" class="btn btn-sm btn-dark mt-3 w-100"> Create Your Amazon account</a>
-
-
-                <a href="#" class="btn btn-outline-success btn-sm mt-2 w-100">
-                    <i class="fab fa-google"></i> Sigin in with google
                 </a>
-
-                <a href="#" class="btn btn-outline-primary btn-sm mt-2 w-100">
-                    <i class="fab fa-facebook-square"></i> Sigin in with facebook
-                </a>
-
-
-
             </div>
+
+
+
+            <div class="col-md-4">
+                <a href="#" class="btn w-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <i class="fas fa-key fa-2x"></i>
+                                <span class="h4">Password Change</span>
+                            </div>
+                            <small class="text-muted">Change your password. </small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+            <div class="col-md-4">
+                <a href="#" class="btn w-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <i class="fas fa-map-marked fa-2x"></i>
+                                <span class="h4">Your Addressess</span>
+                            </div>
+                            <small class="text-muted">Edit Addressess. </small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
         </div>
+        <!--Account Pannel end-->
+
     </div>
+
 
 
 
@@ -290,29 +281,6 @@
     <script src="js/custom.js"></script>
     <script src="js/bootstrap-drawer.min.js"></script>
     <script src="js/bootstrap-drawer.min.js.map"></script>
-
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
-
-
 </body>
 
 </html>

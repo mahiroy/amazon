@@ -39,7 +39,8 @@
 
         <div class="container-fluid">
             <!--Drawer-->
-            <button class="btn btn-outline text-white font-weight-bold" data-toggle="drawer" data-target="#amazonDrawer">
+            <button class="btn btn-outline text-white font-weight-bold" data-toggle="drawer"
+                data-target="#amazonDrawer">
                 <i class="fa fa-sliders-h"></i> All
             </button>
 
@@ -48,19 +49,16 @@
                 <div class="drawer-content drawer-content-scrollable" role="document">
                     <div class="drawer-header bg-dark text-white">
                         <h5 class="drawer-title font-weight-bold m-auto" id="drawer-demo-title">
-                            <i class="fas fa-user-circle fa-1x px-2"></i> Hello Sign in 
+                            <i class="fas fa-user-circle fa-1x px-2"></i> Hello Sign in
                         </h5>
                     </div>
                     <div class="drawer-body">
                         <h6 class="text-muted text-uppercase"> Help & Setting</h6>
-                        <a href="#" class="btn btn-outline-success btn-sm my-2"> Your Account</a>
+                        <a href="your_account.html" class="btn btn-outline-success btn-sm my-2"> Your Account</a>
                         <a href="login.html" class="btn btn-warning btn-sm my-2"> Singn In</a>
 
-                        <hr>
-                        <a href="navbar.html" class="btn btn-warning btn-sm my-2"> Navbar</a>
-                        <a href="drawer.html" class="btn btn-warning btn-sm my-2"> Drawer</a>
+                       
 
-                         
                     </div>
                     <div class="drawer-footer">
                         <button type="button" class="btn btn-outline-danger btn-sm  " data-dismiss="drawer"
@@ -208,12 +206,19 @@
             <div class="card-body">
                 <h3 class="card-title">Register</h3>
                 <!--Register Form-->
-                <form novalidate>
+                <form class="needs-validation" method="POST" action="#" novalidate>
                     <div class="form-group">
                         <label for="userName">Full Name </label>
                         <input type="text" name="name" class="form-control" placeholder="Full Name" id="userName"
-                            >
-                        
+                            required>
+
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Fill Full Name
+                        </div>
+
                     </div>
 
 
@@ -222,26 +227,52 @@
                     <div class="form-group">
                         <label for="userEmail">Email: </label>
                         <input type="email" name="email" class="form-control" placeholder="abc@gmail.com" id="userEmail"
-                            aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted"><i class="fas fa-info text-primary"></i> We'll never share your email with anyone
+                            aria-describedby="emailHelp" required>
+                        <small id="emailHelp" class="form-text text-muted"><i class="fas fa-info text-primary"></i>
+                            We'll never share your email with anyone
                             else.</small>
+
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Full Name
+                        </div>
                     </div>
+
+
                     <div class="form-group">
                         <label for="userPassword">Password: </label>
                         <input type="password" name="password" placeholder="*******" class="form-control"
-                            id="userPassword" aria-describedby="passwordHelp">
-                        <small id="passwordHelp" class="form-text text-muted"><i class="fas fa-info text-primary"></i> Password Must Be At Least 6
+                            id="userPassword" aria-describedby="passwordHelp" required minlength="6">
+                        <small id="passwordHelp" class="form-text text-muted"><i class="fas fa-info text-primary"></i>
+                            Password Must Be At Least 6
                             Characters</small>
+
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Password must be 6 Characters
+                        </div>
 
                     </div>
 
 
                     <div class="form-group">
-                        <label for="userPassword">Re- Password: </label>
+                        <label for="userPassword">Password Again: </label>
                         <input type="password2" name="password2" placeholder="*******" class="form-control"
-                            id="userPassword2" aria-describedby="passwordHelp2">
-                        <small id="passwordHelp2" class="form-text text-muted"><i class="fas fa-info text-primary"></i> Password Must Match The Above
+                            id="userPassword2" aria-describedby="passwordHelp2" required minlength="6">
+                        <small id="passwordHelp2" class="form-text text-muted"><i class="fas fa-info text-primary"></i>
+                            Password Must Match The Above
                         </small>
+
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Do not Match
+                        </div>
 
                     </div>
 
@@ -250,10 +281,11 @@
                 <!--Register form end-->
 
                 <!--Or Seprator-->
-                <hr class="hr-text" data-content="Register With OR"  >
+                <hr class="hr-text" data-content="Register With OR">
 
                 <!--create account button-->
-                <p class="py-3 text-center">Already have an account? <a href="login.html">Login here <i class="fas fa-caret-right"></i></a></p>
+                <p class="py-3 text-center">Already have an account? <a href="login.html">Login here <i
+                            class="fas fa-caret-right"></i></a></p>
 
                 <a href="#" class="btn btn-outline-success btn-sm mt-2 w-100">
                     <i class="fab fa-google"></i> Sigin in with google
@@ -292,6 +324,27 @@
     <script src="js/custom.js"></script>
     <script src="js/bootstrap-drawer.min.js"></script>
     <script src="js/bootstrap-drawer.min.js.map"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 </body>
 
 </html>
