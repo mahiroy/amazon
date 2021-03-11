@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/custom.css">
 
 
-    <title>Amazon Your Account</title>
+    <title>Amazon Your Addresse, </title>
 </head>
 
 
@@ -56,6 +56,7 @@
                         <h6 class="text-muted text-uppercase"> Help & Setting</h6>
                         <a href="your_account.html" class="btn btn-outline-success btn-sm my-2"> Your Account</a>
                         <a href="login.html" class="btn btn-warning btn-sm my-2"> Singn In</a>
+
 
                     </div>
                     <div class="drawer-footer">
@@ -193,69 +194,93 @@
     </nav>
     <!--Navi bar end-->
 
-    <!--Your Account-->
+    <div class="container">
 
-    <div class="container mt-5">
-        <h1>Your Account</h1>
+        <!--bredcrumb start-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent ml-n3">
+                <li class="breadcrumb-item"><a href="your_account.html">Your Account</a></li>
+                <li class="breadcrumb-item active text-danger" aria-current="page">Your Addresses</li>
+            </ol>
+        </nav>
 
-        <!--Account Pannel Start-->
+        <div>
+            <h3>Your Addresses</h3>
+        </div>
+
+
+        <!-- Addresses Cars Start -->
+
         <div class="row">
-
-
             <div class="col-md-4">
-                <a href="your_orders.html" class="btn w-100">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="fas fa-shopping-bag fa-2x"></i>
-                                <span class="h4">Your Orders</span>
-                            </div>
-                            <small class="text-muted">Track, return, or buy things again. </small>
+                <a href="add_new_address.html" class="btn  bg-transparent m-0 p-0 w-100">
+                    <div class="card" style=" border: 2px dashed #c7c7c7;">
+                        <div class="card-body py-5" >
+                            <i class="fas fa-plus fa-2x text-muted"></i>
+                            <h5 class="card-title">Add Address</h5>
                         </div>
                     </div>
                 </a>
             </div>
 
 
-
             <div class="col-md-4">
-                <a href="change_password.html" class="btn w-100">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="fas fa-key fa-2x"></i>
-                                <span class="h4">Password Change</span>
-                            </div>
-                            <small class="text-muted">Change your password. </small>
-                        </div>
+
+                <div class="card " style=" border: 2px solid #c7c7c7;">
+                    <div class="card-header">
+                        <h6 class="text-muted">Default</h6>
                     </div>
+                    <div class="card-body py-0 ">
+                        <p class="font-weight-bold">Balram Singh</p>
+                        <p>House No 104</p>
+                        <p class=" py-0 my-0">Ranchi</p>
+                        <p class=" py-0 my-0">Jharkhand</p>
+                        <p class=" py-0 my-0">India</p>
+                        <p class=" py-0 my-0">Phone No : 9878545877</p>
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-outline-info btn-sm"><i class="fas fa-pencil-alt"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
                 </a>
+
+
             </div>
 
 
 
 
             <div class="col-md-4">
-                <a href="your_addresses.html" class="btn w-100">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="fas fa-map-marked fa-2x"></i>
-                                <span class="h4">Your Addressess</span>
-                            </div>
-                            <small class="text-muted">Edit Addressess. </small>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
+                <div class="card " style=" border: 2px solid #c7c7c7;">
+                    <div class="card-header">
+                        <h6 class="text-muted">New Address</h6>
+                    </div>
+                    <div class="card-body py-0 ">
+                        <p class="font-weight-bold">Balram Singh</p>
+                        <p>House No 104</p>
+                        <p class=" py-0 my-0">Ranchi</p>
+                        <p class=" py-0 my-0">Jharkhand</p>
+                        <p class=" py-0 my-0">India</p>
+                        <p class=" py-0 my-0">Phone No : 9878545877</p>
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-outline-info btn-sm"><i class="fas fa-pencil-alt"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                </a>
+
+
+            </div>
+            <!-- Addresses Cars End -->
 
 
 
         </div>
-        <!--Account Pannel end-->
-
-    </div>
 
 
 
@@ -263,24 +288,27 @@
 
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
-    <!--custom javaScript-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
 
-    <script src="js/custom.js"></script>
-    <script src="js/bootstrap-drawer.min.js"></script>
-    <script src="js/bootstrap-drawer.min.js.map"></script>
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+        <!--custom javaScript-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+
+        <script src="js/custom.js"></script>
+        <script src="js/bootstrap-drawer.min.js"></script>
+        <script src="js/bootstrap-drawer.min.js.map"></script>
 </body>
 
 </html>
