@@ -1,217 +1,312 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--favicon-->
+    <link
+      rel="shortcut icon"
+      href="img/icon.png"
+      type="image/x-icon"
+      size="16x16"
+    />
 
-  <!--favicon-->
-  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" size="16x16">
+    <!--font awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
 
-
-  <!--font awesome cdn-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-    crossorigin="anonymous" />
-
-
-
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css.map">
-  <link rel="stylesheet" href="css/bootstrap-drawer.min.css">
-  <link rel="stylesheet" href="css/bootstrap-drawer.min.css.map">
-  <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/bootstrap-drawer.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-drawer.min.css.map" />
+    <link rel="stylesheet" href="css/custom.css" />
 
+    <title>Amazon Navbar,</title>
+  </head>
 
-  <title>Amazon Navbar, </title>
-</head>
+  <body>
+    <!--Navi bar start-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!--Drawer-->
+        <button
+          class="btn btn-outline text-white font-weight-bold"
+          data-toggle="drawer"
+          data-target="#amazonDrawer"
+        >
+          <i class="fa fa-sliders-h"></i> All
+        </button>
 
-
-
-
-
-<body>
-  <!--Navi bar start-->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
-    <div class="container-fluid">
-      <!--Drawer-->
-      <button class="btn btn-outline text-white font-weight-bold" data-toggle="drawer" data-target="#amazonDrawer">
-        <i class="fa fa-sliders-h"></i> All
-      </button>
-
-      <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-demo-title"
-        aria-hidden="true" id="amazonDrawer">
-        <div class="drawer-content drawer-content-scrollable" role="document">
-          <div class="drawer-header bg-dark text-white">
-            <h5 class="drawer-title font-weight-bold m-auto" id="drawer-demo-title">
-              <i class="fas fa-user-circle fa-1x px-2"></i> Hello Sign in
-            </h5>
-          </div>
-          <div class="drawer-body">
-            <h6 class="text-muted text-uppercase"> Help & Setting</h6>
-            <a href="your_account.html" class="btn btn-outline-success btn-sm my-2"> Your Account</a>
-            <a href="login.html" class="btn btn-warning btn-sm my-2"> Singn In</a>
-
-          
-          </div>
-          <div class="drawer-footer">
-            <button type="button" class="btn btn-outline-danger btn-sm  " data-dismiss="drawer" aria-label="Close">
-              <i class="fas fa-times fa-2x"></i>
-            </button>
+        <div
+          class="drawer drawer-left slide"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="drawer-demo-title"
+          aria-hidden="true"
+          id="amazonDrawer"
+        >
+          <div class="drawer-content drawer-content-scrollable" role="document">
+            <div class="drawer-header bg-dark text-white">
+              <h5
+                class="drawer-title font-weight-bold m-auto"
+                id="drawer-demo-title"
+              >
+                <i class="fas fa-user-circle fa-1x px-2"></i> Hello Sign in
+              </h5>
+            </div>
+            <div class="drawer-body">
+              <h6 class="text-muted text-uppercase">Help & Setting</h6>
+              <a
+                href="your_account.html"
+                class="btn btn-outline-success btn-sm my-2"
+              >
+                Your Account</a
+              >
+              <a href="login.html" class="btn btn-warning btn-sm my-2">
+                Singn In</a
+              >
+            </div>
+            <div class="drawer-footer">
+              <button
+                type="button"
+                class="btn btn-outline-danger btn-sm"
+                data-dismiss="drawer"
+                aria-label="Close"
+              >
+                <i class="fas fa-times fa-2x"></i>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <!--Drawer End-->
+        <!--Drawer End-->
 
+        <!--Logo-->
+        <a class="navbar-brand pl-2" href="#">
+          <img
+            src="img/amazon_logo_light.png"
+            height="30"
+            width="100"
+            alt="log"
+          />
+        </a>
+        <!--Logo End-->
 
-      <!--Logo-->
-      <a class="navbar-brand pl-2" href="#">
-        <img src="img/amazon_logo_light.png" height="30" width="100" alt="log">
-      </a>
-      <!--Logo End-->
+        <!--Nav Start Toggle-->
 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-      <!--Nav Start Toggle-->
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--category select and search-->
-        <form class="form-inline px-lg-5" bovalidate method="GET">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="dropdown">
-                <button class="btn btn  btn-secondary dropdown-toggle" name="btnCategory" type="button"
-                  id="btnCategoryDropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                  <b>All</b>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--category select and search-->
+          <form class="form-inline px-lg-5" bovalidate method="GET">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="dropdown">
+                  <button
+                    class="btn btn btn-secondary dropdown-toggle"
+                    name="btnCategory"
+                    type="button"
+                    id="btnCategoryDropdownMenu"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <b>All</b>
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="btnCategoryDropdownMenu"
+                  >
+                    <li><a class="dropdown-item" href="#">Mobile</a></li>
+                    <li><a class="dropdown-item" href="#">Clothes</a></li>
+                    <li><a class="dropdown-item" href="#">Kitchen</a></li>
+                    <li><a class="dropdown-item" href="#">Prime Deals</a></li>
+                    <li><a class="dropdown-item" href="#">Book</a></li>
+                  </ul>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                size="100"
+                name="query"
+                id="query"
+              />
+              <input
+                type="text"
+                name="category"
+                id="category"
+                hidden
+                value="book"
+              />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-warning">
+                  <i class="fas fa-search"></i>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="btnCategoryDropdownMenu">
-                  <li><a class="dropdown-item" href="#">Mobile</a></li>
-                  <li><a class="dropdown-item" href="#">Clothes</a></li>
-                  <li><a class="dropdown-item" href="#">Kitchen</a></li>
-                  <li><a class="dropdown-item" href="#">Prime Deals</a></li>
-                  <li><a class="dropdown-item" href="#">Book</a></li>
-                </ul>
               </div>
             </div>
-            <input type="text" class="form-control " size="100" name="query" id="query">
-            <input type="text" name="category" id="category" hidden value="book">
-            <div class="input-group-append">
-              <button type="submit" class="btn btn-warning "> <i class="fas fa-search "></i></button>
-            </div>
-          </div>
+          </form>
 
-        </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!--Lenaguage-->
+            <li class="nav-item dropdown px-2">
+              <a
+                class="nav-link"
+                href="#"
+                id="prefLanguageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-language text-danger fa-2x"></i>
+              </a>
+              <div
+                class="dropdown-menu px-2"
+                aria-labelledby="prefLanguageDropdown"
+              >
+                <form class="p-2">
+                  <div class="custom-control custom-radio mb-2">
+                    <input
+                      class="custom-control-input"
+                      type="radio"
+                      name="prefLang"
+                      id="englishLang"
+                      value="english"
+                      checked
+                    />
+                    <label class="custom-control-label" for="englishLang">
+                      <img
+                        src="img/flag/eng.png"
+                        alt="uk flag"
+                        width="40"
+                        height="20"
+                      />
+                    </label>
+                  </div>
 
+                  <div class="custom-control custom-radio mb-2">
+                    <input
+                      class="custom-control-input"
+                      type="radio"
+                      name="prefLang"
+                      id="hindiLang"
+                      value="hindi"
+                    />
+                    <label class="custom-control-label" for="hindiLang">
+                      <img
+                        src="img/flag/india.jpg"
+                        alt="uk flag"
+                        width="40"
+                        height="20"
+                      />
+                    </label>
+                  </div>
+                  <div class="dropdown-divider"></div>
 
-
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-
-
-          <!--Lenaguage-->
-          <li class="nav-item dropdown px-2">
-            <a class="nav-link " href="#" id="prefLanguageDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <i class="fas fa-language text-danger fa-2x"></i>
-            </a>
-            <div class="dropdown-menu px-2" aria-labelledby="prefLanguageDropdown">
-
-              <form class="p-2">
-                <div class="custom-control custom-radio    mb-2 ">
-                  <input class="custom-control-input " type="radio" name="prefLang" id="englishLang" value="english"
-                    checked>
-                  <label class="custom-control-label " for="englishLang">
-                    <img src="img/flag/eng.png" alt="uk flag" width="40" height="20"> </label>
-                </div>
-
-                <div class="custom-control custom-radio   mb-2">
-                  <input class="custom-control-input" type="radio" name="prefLang" id="hindiLang" value="hindi">
-                  <label class="custom-control-label" for="hindiLang">
-                    <img src="img/flag/india.jpg" alt="uk flag" width="40" height="20"> </label>
-                </div>
-                <div class="dropdown-divider"></div>
-
-                <div class="custom-control custom-radio  ">
-                  <input class="custom-control-input" type="radio" name="prefLang" id="banglaLeng" value="bangla">
-                  <label class="custom-control-label" for="banglaLeng">
-                    <img src="img/flag/bangla.jpg" alt="uk flag" width="40" height="20"> </label>
-                </div>
-
-
-
-              </form>
-            </div>
-          </li>
-
-
-
-
-          <!--my account-->
-          <li class="nav-item dropdown px-2">
-            <a class="nav-link " href="#" id="userAccount" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <i class="fas fa-user-circle fa-2x"></i>
-            </a>
-            <div class="dropdown-menu px-3" aria-labelledby="userAccount">
-              <div class="d-flex row justify-content-center">
-                <a href="login.html" class="btn btn-warning w-75 font-weight-bold">Signin</a>
-                <small class="text-muted">New Customer? <a href="register.html">Start here.</a></small>
+                  <div class="custom-control custom-radio">
+                    <input
+                      class="custom-control-input"
+                      type="radio"
+                      name="prefLang"
+                      id="banglaLeng"
+                      value="bangla"
+                    />
+                    <label class="custom-control-label" for="banglaLeng">
+                      <img
+                        src="img/flag/bangla.jpg"
+                        alt="uk flag"
+                        width="40"
+                        height="20"
+                      />
+                    </label>
+                  </div>
+                </form>
               </div>
-            </div>
-          </li>
+            </li>
 
+            <!--my account-->
+            <li class="nav-item dropdown px-2">
+              <a
+                class="nav-link"
+                href="#"
+                id="userAccount"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user-circle fa-2x"></i>
+              </a>
+              <div class="dropdown-menu px-3" aria-labelledby="userAccount">
+                <div class="d-flex row justify-content-center">
+                  <a
+                    href="login.html"
+                    class="btn btn-warning w-75 font-weight-bold"
+                    >Signin</a
+                  >
+                  <small class="text-muted"
+                    >New Customer?
+                    <a href="register.html">Start here.</a></small
+                  >
+                </div>
+              </div>
+            </li>
 
-
-          <li class="nav-item px-2">
-            <a class="nav-link" href="" area-disabled="true">
-              <i class="fas text-light fa-shopping-cart fa-2x"></i>
-              <span class="badge badge-warning badge-pill">0</span>
-            </a>
-          </li>
-
-        </ul>
-
-
-
-
-
+            <li class="nav-item px-2">
+              <a class="nav-link" href="" area-disabled="true">
+                <i class="fas text-light fa-shopping-cart fa-2x"></i>
+                <span class="badge badge-warning badge-pill">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!--Navi bar end-->
+    </nav>
+    <!--Navi bar end-->
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!--custom javaScript-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-  <!--custom javaScript-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-
-  <script src="js/custom.js"></script>
-  <script src="js/bootstrap-drawer.min.js"></script>
-  <script src="js/bootstrap-drawer.min.js.map"></script>
-</body>
-
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap-drawer.min.js"></script>
+    <script src="js/bootstrap-drawer.min.js.map"></script>
+  </body>
 </html>
